@@ -1,10 +1,24 @@
 
 .alert{
-  color: #fff;
-  font-size: 20px;
-  font-weight: 700;
+  color: var(--color-light);
+  font-size: 1.6rem;
+  font-weight: 600;
   text-align: center;
-  padding: 5px;
-  background-color: #ff6b6b;
-  border-radius: 5px;
+  padding: 1.2rem 1.5rem;
+  background-color: var(--color-danger);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  margin: 1.5rem 0;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

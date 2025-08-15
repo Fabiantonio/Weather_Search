@@ -1,0 +1,85 @@
+.weatherContainer {
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  margin: 20px auto;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.cityName {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.temperature {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 15px 0;
+  color: #2c3e50;
+}
+
+.minMaxContainer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.minMax {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.minMaxLabel {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  margin-bottom: 5px;
+}
+
+.minMaxValue {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #34495e;
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+  .weatherContainer {
+    margin: 30px auto;
+    padding: 15px;
+    max-width: 90%;
+  }
+  
+  .cityName {
+    font-size: 1.5rem;
+  }
+  
+  .temperature {
+    font-size: 2.5rem;
+    margin: 10px 0;
+  }
+  
+  .minMaxLabel {
+    font-size: 0.8rem;
+  }
+  
+  .minMaxValue {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .weatherContainer {
+    margin: 40px auto;
+    padding: 12px;
+  }
+  
+  .temperature {
+    font-size: 2.2rem;
+  }
+}
